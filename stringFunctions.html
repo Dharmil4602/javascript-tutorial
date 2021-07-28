@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+<body>
+    <script>
+        var str = `Hey This Is Dharmil Here`
+        console.log(str)
+
+        // Finding Position In The Given String
+
+        var position = str.indexOf(`Is`)
+        console.log(position)
+
+        // Finding Substring From The Given String
+
+        var sub = str.slice(1,5) // Here Starting Index Is Included But Ending Index Is Not Included, Also In .slice we can give negative values as index
+        console.log(sub)
+        
+        sub = str.substring(1,5) // Similar As .slice But Here Only Positive Values Index Are Taken
+        console.log(sub)
+
+        sub = str.substr(1,5)
+        console.log(sub) // Here Starting As Well As Ending Indexes Are Included
+
+        // Replacing Words In The Given String
+
+        var replaced = str.replace(`Hey`, `Hello`)
+        console.log(str)
+        console.log(replaced)
+
+        // Changing The Cases Of String
+
+        console.log(str.toUpperCase()) 
+        console.log(str.toLowerCase()) 
+
+        var whitespace = `     This Includes         WhiteSpaces      `
+        console.log(whitespace) // This is show all the whitespaces
+        console.log(whitespace.trim()) // .trim will remove the whitespaces from starting and ending
+
+        // Finding Character At Particular Position
+
+        var char = str.charAt(4)
+        console.log(char)
+    </script>
+</body>
+</html>

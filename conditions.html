@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statement In JavaScript</title>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li>Item-1</li>
+            <li>Item-2</li>
+            <li>Item-3</li>
+            <li>Item-4</li>
+            <li>Item-5</li>
+            <li>Item-6</li>
+            <li>Item-7</li>
+            <li>Item-8</li>
+        </ul>
+    </div>
+
+    <script>
+        var str1 = `This Is String1`
+        var str1 = `This Is String2`
+        console.log(str1)
+        // In above example we had seen that by declaring variable with "var" and keeping the name of variable same, it is overwritten.
+
+        var a = 1
+        {
+            var a = 2
+            console.log(a)
+        }
+        console.log(a)
+        // As in above block of code we have seen that we have declared var a two times and the second declaration is considered whether the variable is declared in { } these brackets or outside. This is the major problem with var data type. So we will be using "let" instead of var
+
+
+        let b = 3;
+        {
+            let b = 6;
+            console.log(b)
+        }
+        console.log(b)
+        // let str2 = `Hello`
+        // let str2 = `Hey`
+        // console.log(str2)
+        // In above example we had seen that by declaring variable with "let" and keeping the name of variable same, it gives us an error. 
+
+        const c = `This Is A const Data Type And Once It Is Declared, It Cannot Be Changed`
+        console.log(c)
+
+        let age = 30;
+        if (age >= 18) {
+            console.log(`You Are Eligible For Voting...!!!`)
+        }
+        else {
+            console.log(`You Are Not Eligible`)
+        }
+
+        // Switch Case Statements
+
+        const cups = 4;
+        switch (cups) {
+            case 4:
+                console.log(`This Is 4.`)
+                break;
+
+            case 14:
+                console.log(`This Is 14.`)
+                break;
+
+            case 40:
+                console.log(`This Is 40.`)
+                break;
+
+            case 20:
+                console.log(`This Is 20.`)
+                break;
+                
+                default:
+                console.log(`This Is None Of Above.`)
+                break;
+        }
+    </script>
+</body>
+
+</html>

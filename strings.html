@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <div class="container">
+        Hy
+        <div id="id"></div>
+    </div>
+
+    <script>
+        var a = "Dharmil";
+        var b = "That's Dharmil"
+        console.log(a)
+        console.log(b)
+
+        var c = "Is A Good Boy"
+        console.log(a + " " + c)
+
+        var d = `Hey There`
+        console.log(d)
+
+        // We can also write in this format in order to ease the work flow
+        // We have used back ticks in which we can use both single quotes and double quotes
+        var temp = `${a} ${c} and he in a 'student' studying in "3rd" year CSE`
+        console.log(temp)
+
+        // Finding length of particular string
+
+        var len = a.length
+        console.log(`The Length Of The Name Is: ${len}`)
+
+        document.getElementById(`id`).innerHTML = `<h1> This heading is inserted by JavaScript </h3>`
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays And Objects</title>
+</head>
+<body>
+    <h1>Here We Will Learn About Arrays And Objects</h1>
+
+    <script>
+        
+        // Below Method Is Normal Way To Create Object
+
+        let employee = {
+            name: `Dharmil`,
+            salary: 20000,
+            proffession: `Student`,
+            year: `3rd Year`
+        }
+        console.log(employee)
+
+        // Below One Is Array Form
+
+        let names = [1, 2, `Dharmil`, `Shah`, 6, `This Is Array`]
+        console.log(names)
+
+        names = names.sort()
+        console.log(names)
+
+        names = new Array(25);
+        console.log(names)
+
+       /*
+        names.push(`By push, this will be added at the end of array`)
+        console.log(names)
+       */
+
+        // Below One Is ALso An Array But In Object Form
+
+        let arr = new Array(`This Is Array In Object Form`, 2, 6, 100, 10)
+        console.log(arr)
+        console.log(arr.length)
+
+    </script>
+</body>
+</html>
