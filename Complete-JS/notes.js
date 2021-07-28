@@ -87,7 +87,7 @@ let searchTxt = document.getElementById(`searchTxt`);
 searchTxt.addEventListener(`input`, function(){
 
     let inputVal = searchTxt.value.toLowerCase();
-    console.log(`Input Event Fired`, searchTxt.value);
+    // console.log(`Input Event Fired`, searchTxt.value);
 
     let noteCard = document.getElementsByClassName(`notesCard`);
     Array.from(noteCard).forEach(function(element){
@@ -101,7 +101,7 @@ searchTxt.addEventListener(`input`, function(){
         {
             element.style.display = `none`;
         }
-        console.log(cardTxt);
+        // console.log(cardTxt);
 
     })
 
