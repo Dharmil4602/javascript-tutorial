@@ -35,58 +35,88 @@
         </div>
     </nav>
 
+    <div id="message" style="background-color: rgb(250, 158, 158);">
+      
+    </div>
+
     <div class="container my-3">
 
         <h1>DS Library</h1>
         <hr>
-        <form>
+        <form id="libraryForm">
             <div class="row mb-3">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <label for="book-name" class="col-sm-2 col-form-label">Name</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3">
+                <input type="text" class="form-control" id="book-name" placeholder="Book Name">
               </div>
             </div>
             <div class="row mb-3">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+              <label for="author" class="col-sm-2 col-form-label">Author</label>
               <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputPassword3">
+                <input type="text" class="form-control" id="author" placeholder="Author Name">
               </div>
             </div>
             <fieldset class="row mb-3">
-              <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+              <legend class="col-form-label col-sm-2 pt-0">Type</legend>
               <div class="col-sm-10">
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                  <input class="form-check-input" type="radio" name="type" id="fiction" value="Fiction">
                   <label class="form-check-label" for="gridRadios1">
-                    First radio
+                    Fiction
                   </label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                  <input class="form-check-input" type="radio" name="type" id="technology" value="Technology">
                   <label class="form-check-label" for="gridRadios2">
-                    Second radio
+                    Technology
                   </label>
                 </div>
                 <div class="form-check disabled">
-                  <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                  <input class="form-check-input" type="radio" name="type" id="cooking" value="Cooking">
                   <label class="form-check-label" for="gridRadios3">
-                    Third disabled radio
+                    Cooking
                   </label>
                 </div>
               </div>
             </fieldset>
-            <div class="row mb-3">
-              <div class="col-sm-10 offset-sm-2">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck1">
-                  <label class="form-check-label" for="gridCheck1">
-                    Example checkbox
-                  </label>
-                </div>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+      
+            <button type="submit" class="btn btn-primary">Add Book</button>
           </form>
+
+          <div id="table" class="my-3">
+
+            <h1>Your Books</h1>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Author</th>
+                  <th scope="col">Type</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody">
+                <tr>
+                  <!-- <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td> -->
+                </tr>
+                <!-- <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry the Bird</td>
+                  <td>Hello</td>
+                  <td>@twitter</td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
     </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
