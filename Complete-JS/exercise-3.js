@@ -29,6 +29,6 @@ else
 delete this.issuedBook[bookName]; // this delete operator is used to remove something.
 
 this.returnBook[bookName] = user;
-console.log(`${bookName} has been returned by ${user}`);
+console.log(`${bookName} book has been returned by ${user}`);
     }
 }
