@@ -71,3 +71,43 @@ console.log(result3);
 
 let result4 = s.replace(reg, `Jimmy`);
 console.log(result4);
+
+console.log(" ");
+console.log(`Second Part Of Regular Expressions Starts Here:`);
+
+/* 
+Regular Expressions:
+
+--> Metacharacters
+
+*/
+
+console.log(`Hello`);
+
+let regex = /shah/;
+// regex = /^sha/; 
+// Here ^ means  expression will match if string starts with the given expression
+
+// regex = /ah$/; 
+// Here $ means expression will match if string end with the given expression.
+
+// regex = /s.ah/; 
+// Here . matches any one character in the given expression.
+
+// regex = /s*ah/; 
+// Here . matches any 0 or more character in the given expression.
+
+regex = /sh?aht?/; 
+// The letter just before the question mark will be optional. i.e. if the letter just before question mark is present or not, the expression will be matched. 
+
+let str = `shah is shah`;
+let res = regex.exec(str);
+console.log(res);
+
+if (regex.test(str)) {
+    console.log(`The String "${str}" matches the expression "${regex.source}"`);
+}
+else {
+    console.log(`The String "${str}" does not matches the expression "${regex.source}"`);
+    
+}
