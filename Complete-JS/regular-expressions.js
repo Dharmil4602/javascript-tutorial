@@ -1,5 +1,14 @@
 /*
-Regular Expression Functions Are:
+Regular Expressions:
+
+--> Basic Functions
+--> Metacharacter Symbols
+--> Character Sets
+
+*/
+
+/*
+Regular Expression Basic Functions Are:
 
 1. exec() - This Function Will Return An Array For Match Or null For no Match
 
@@ -107,7 +116,39 @@ console.log(res);
 if (regex.test(str)) {
     console.log(`The String "${str}" matches the expression "${regex.source}"`);
 }
-else {
+else 
+{
     console.log(`The String "${str}" does not matches the expression "${regex.source}"`);
-    
 }
+
+console.log(" ");
+console.log(`Third Part Of Regular Expressions Starts Here:`);
+
+/*
+ Regular Expressions:
+
+ --> Character Sets - [] sqaure brackets are representation of character sets.
+ 
+*/
+
+let regExp = /D[a-z]armil/;
+// The second letter can be any between a to z, as the next letter after D is h which is available in the given range, so it will not five an error.
+
+// Quantifiers: Repeating The letter in a string.
+
+regExp = /Dha{0,2}rmil/; // Here a can occur from 0 to 2 in the given string
+
+// Groupings: We Use Parenthesis {} for groupings.
+let str1 = `Dharmil Bhai`;
+let resu = regExp.exec(str1);
+console.log(`The Result Is: `, resu);
+
+if (regExp.test(str1)) {
+    console.log(`The String "${str1}" matches the expression ${regExp.source}`);
+}
+else 
+{
+    console.log(`The String "${str1}" does not matches the expression ${regExp.source}`);
+}
+
+
