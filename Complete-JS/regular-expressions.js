@@ -4,6 +4,8 @@ Regular Expressions:
 --> Basic Functions
 --> Metacharacter Symbols
 --> Character Sets
+--> Shorthand Character
+--> Assertions
 
 */
 
@@ -150,5 +152,60 @@ else
 {
     console.log(`The String "${str1}" does not matches the expression ${regExp.source}`);
 }
+ 
+
+console.log(" ");
+console.log(`Fourth Part Of Regular Expressions Starts Here:`);
+
+/*
+
+--> Shorthand Character
+
+ */
+
+let regularExpression = /\wmil/;
+// \w is representing word character: _ or alphabet or numbers, any from the following
+
+regularExpression = /\w+mil/;
+// \w+ means all the letters till mil
+
+regularExpression = /\WBhai/;
+// \W means non word characters also counted: includes whitespaces
+
+regularExpression = /\d11/;
+// \d means digits
+
+regularExpression = /\D11/;
+// \D means matching Non Digits
+
+// regularExpression = /\s11/;
+// \s means including whitespaces also
+
+regularExpression = /\S11/;
+// \S means including Non-whitespace character
+
+regularExpression = /hai\b/;
+// \b represents word boundary
 
 
+// Assertions:
+
+regularExpression = /B(?=h)/;
+// here ?=h means that h should be present after the letter specified as above(here B).
+
+regularExpression = /B(?!h)/;
+// here ?!h means that h should not be present after the letter specified as above(here B).
+
+// let str2 = `Dharmil Bhai 989frreg        1111`; // for \s
+// let str2 = `Dharmil Bvfhai 989frreg1111`; // for (?!h)
+let str2 = `Dharmil Bvfhai 989frreg1111`;
+let resul = regularExpression.exec(str2);
+console.log(`The Result Is: `, resul);
+
+if (regularExpression.test(str2)) {
+    console.log(`The String "${str2}" matches the expression ${regularExpression.source}`);
+}
+else 
+{
+    console.log(`The String "${str2}" does not matches the expression ${regularExpression.source}`);
+}
